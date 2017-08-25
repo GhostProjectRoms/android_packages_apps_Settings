@@ -99,6 +99,7 @@ public class XenonHDVersionPreferenceController extends PreferenceController
             }
 
             final Intent intent = new Intent(Intent.ACTION_MAIN)
+                    .putExtra("xenonhd", preference.getKey().equals(KEY_XENONHD_VERSION))
                     .setClassName(
                             "android", com.android.internal.app.PlatLogoActivity.class.getName());
             try {
