@@ -20,7 +20,9 @@
   <string name="changelog_xenonhd_error">Chyba při načítání seznamu změn</string>
   <string name="changelog_xenonhd_summary">Zobrazit změny v aktuální verzi</string>
   <!-- Development Settings -->
+  <string name="show_dev_already_enabled">Možnosti vývojáře jsou ve výchozím nastavení povolena</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Dodavatel verze</string>
   <string name="vendor_version_default">Neznámá</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>
