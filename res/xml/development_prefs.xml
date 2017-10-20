@@ -21,6 +21,7 @@
     <PreferenceScreen
             android:key="development_tools"
             android:title="@string/development_tools_title"
+            android:icon="@drawable/ic_development"
             android:persistent="false" >
         <intent
                 android:action="android.settings.development.LAUNCH_TOOLS"
