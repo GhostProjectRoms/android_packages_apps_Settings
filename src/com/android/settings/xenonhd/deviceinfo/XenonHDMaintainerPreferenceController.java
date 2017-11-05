@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2017 TeamHorizon
+ * Copyright (C) 2017 PornAOSP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.xenonhd.deviceinfo;
+package com.android.settings.paosp.deviceinfo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -35,18 +35,18 @@ import com.android.settings.core.lifecycle.events.OnResume;
 import com.android.settingslib.RestrictedLockUtils;
 
 
-public class XenonHDMaintainerPreferenceController extends PreferenceController
+public class PornAOSPMaintainerPreferenceController extends PreferenceController
         implements LifecycleObserver, OnResume {
 
-    private static final String TAG = "XenonHDMaintainerPref";
-    private static final String KEY_XENONHD_MAINTAINER = "xenonhd_maintainer";
+    private static final String TAG = "PornAOSPMaintainerPref";
+    private static final String KEY_PAOSP_MAINTAINER = "paosp_maintainer";
 
     private final UserManager mUserManager;
 
     private RestrictedLockUtils.EnforcedAdmin mFunDisallowedAdmin;
     private boolean mFunDisallowedBySystem;
 
-    public XenonHDMaintainerPreferenceController(Context context, Lifecycle lifecycle) {
+    public PornAOSPMaintainerPreferenceController(Context context, Lifecycle lifecycle) {
         super(context);
         mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
         if (lifecycle != null) {
@@ -62,18 +62,18 @@ public class XenonHDMaintainerPreferenceController extends PreferenceController
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        String buildtype = SystemProperties.get("ro.xenonhd.type","Unofficial");
-        final Preference pref = screen.findPreference(KEY_XENONHD_MAINTAINER);
+        String buildtype = SystemProperties.get("ro.paosp.type","Unofficial");
+        final Preference pref = screen.findPreference(KEY_PAOSP_MAINTAINER);
         if (buildtype.equalsIgnoreCase("Unofficial")) {
-            removePreference(screen, KEY_XENONHD_MAINTAINER);
+            removePreference(screen, KEY_PAOSP_MAINTAINER);
         } else {
-            pref.setSummary(Build.VERSION.XENONHD_MAINTAINER);
+            pref.setSummary(Build.VERSION.PAOSP_MAINTAINER);
         }
     }
 
     @Override
     public String getPreferenceKey() {
-        return KEY_XENONHD_MAINTAINER;
+        return KEY_PAOSP_MAINTAINER;
     }
 
     @Override

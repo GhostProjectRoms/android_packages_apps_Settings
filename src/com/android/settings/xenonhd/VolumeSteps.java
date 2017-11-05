@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.xenonhd;
+package com.android.settings.paosp;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -137,7 +137,7 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.XENONHD;
+        return MetricsEvent.PAOSP;
     }
 
     private SharedPreferences getDefaultStepsPrefs() {

@@ -41,9 +41,9 @@ import com.android.settings.deviceinfo.SecurityPatchPreferenceController;
 import com.android.settings.deviceinfo.VendorVersionPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import com.android.settings.xenonhd.deviceinfo.XenonHDMaintainerPreferenceController;
-import com.android.settings.xenonhd.deviceinfo.XenonHDVersionPreferenceController;
-import com.android.settings.xenonhd.deviceinfo.XenonOTAPreferenceController;
+import com.android.settings.paosp.deviceinfo.PornAOSPMaintainerPreferenceController;
+import com.android.settings.paosp.deviceinfo.PornAOSPVersionPreferenceController;
+import com.android.settings.paosp.deviceinfo.PornOTAPreferenceController;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -129,9 +129,9 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new SELinuxStatusPreferenceController(context));
         controllers.add(new SafetyInfoPreferenceController(context));
-        controllers.add(new XenonHDMaintainerPreferenceController(context, lifecycle));
-        controllers.add(new XenonHDVersionPreferenceController(context, lifecycle));
-        controllers.add(new XenonOTAPreferenceController(context));
+        controllers.add(new PornAOSPMaintainerPreferenceController(context, lifecycle));
+        controllers.add(new PornAOSPVersionPreferenceController(context, lifecycle));
+        controllers.add(new PornOTAPreferenceController(context));
         controllers.add(new VendorVersionPreferenceController(context));
         return controllers;
     }

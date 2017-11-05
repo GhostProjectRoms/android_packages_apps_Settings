@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2017 TeamHorizon
+ * Copyright (C) 2017 PornAOSP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.xenonhd.deviceinfo;
+package com.android.settings.paosp.deviceinfo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,11 +33,11 @@ import com.android.settings.core.lifecycle.LifecycleObserver;
 import com.android.settings.core.lifecycle.events.OnResume;
 import com.android.settingslib.RestrictedLockUtils;
 
-public class XenonHDVersionPreferenceController extends PreferenceController
+public class PornAOSPVersionPreferenceController extends PreferenceController
         implements LifecycleObserver, OnResume {
 
-    private static final String TAG = "XenonHDVersionPref";
-    private static final String KEY_XENONHD_VERSION = "xenonhd_version";
+    private static final String TAG = "PornAOSPVersionPref";
+    private static final String KEY_PAOSP_VERSION = "paosp_version";
 
     private final UserManager mUserManager;
 
@@ -46,7 +46,7 @@ public class XenonHDVersionPreferenceController extends PreferenceController
 
     private long[] mHits = new long[3];
 
-    public XenonHDVersionPreferenceController(Context context, Lifecycle lifecycle) {
+    public PornAOSPVersionPreferenceController(Context context, Lifecycle lifecycle) {
         super(context);
         mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
         if (lifecycle != null) {
@@ -62,15 +62,15 @@ public class XenonHDVersionPreferenceController extends PreferenceController
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        final Preference pref = screen.findPreference(KEY_XENONHD_VERSION);
+        final Preference pref = screen.findPreference(KEY_PAOSP_VERSION);
         if (pref != null) {
-            pref.setSummary(Build.VERSION.XENONHD_VERSION);
+            pref.setSummary(Build.VERSION.PAOSP_VERSION);
         }
     }
 
     @Override
     public String getPreferenceKey() {
-        return KEY_XENONHD_VERSION;
+        return KEY_PAOSP_VERSION;
     }
 
     @Override
@@ -83,7 +83,7 @@ public class XenonHDVersionPreferenceController extends PreferenceController
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
-        if (!TextUtils.equals(preference.getKey(), KEY_XENONHD_VERSION)) {
+        if (!TextUtils.equals(preference.getKey(), KEY_PAOSP_VERSION)) {
             return false;
         }
         System.arraycopy(mHits, 1, mHits, 0, mHits.length - 1);
