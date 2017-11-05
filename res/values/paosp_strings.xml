@@ -41,8 +41,8 @@
     <string name="vendor_version_default">Unknown</string>
 
     <!-- PornOTA -->
-    <string name="xenonota_title">PornOTA</string>
-    <string name="xenonota_summary">Check for PornAOSP updates</string>
+    <string name="paospota_title">PornOTA</string>
+    <string name="paospota_summary">Check for PornAOSP updates</string>
 
     <!-- PornAOSP version -->
     <string name="paosp_version">PornAOSP version</string>
