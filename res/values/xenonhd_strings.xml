@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 PornAOSP
+<!-- Copyright (C) 2017 XenonHD
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Changelog -->
-    <string name="changelog_paosp_title">Changelog</string>
-    <string name="changelog_paosp_error">Unable to load changelog</string>
-    <string name="changelog_paosp_summary">View changes in curent release</string>
+    <string name="changelog_xenonhd_title">Changelog</string>
+    <string name="changelog_xenonhd_error">Unable to load changelog</string>
+    <string name="changelog_xenonhd_summary">View changes in curent release</string>
 
     <!-- Development Settings -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
@@ -40,13 +40,13 @@
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
 
-    <!-- PornOTA -->
-    <string name="xenonota_title">PornOTA</string>
-    <string name="xenonota_summary">Check for PornAOSP updates</string>
+    <!-- XenonOTA -->
+    <string name="xenonota_title">XenonOTA</string>
+    <string name="xenonota_summary">Check for XenonHD updates</string>
 
-    <!-- PornAOSP version -->
-    <string name="paosp_version">PornAOSP version</string>
-    <string name="paosp_maintainer">Maintainer</string>
+    <!-- XenonHD version -->
+    <string name="xenonhd_version">XenonHD version</string>
+    <string name="xenonhd_maintainer">Maintainer</string>
 
     <!-- Density category -->
     <string name="density_category">Density options</string>

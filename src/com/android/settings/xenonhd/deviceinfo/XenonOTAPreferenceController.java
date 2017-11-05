@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2017 PornAOSP
+ * Copyright (C) 2017 TeamHorizon
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.paosp.deviceinfo;
+package com.android.settings.xenonhd.deviceinfo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,12 +28,12 @@ import android.util.Log;
 
 import com.android.settings.core.PreferenceController;
 
-public class PornOTAPreferenceController extends PreferenceController {
+public class XenonOTAPreferenceController extends PreferenceController {
 
-    private static final String TAG = "PornOTAPref";
+    private static final String TAG = "XenonOTAPref";
     private static final String KEY_XENONOTA = "xenonota";
 
-    public PornOTAPreferenceController(Context context) {
+    public XenonOTAPreferenceController(Context context) {
         super(context);
     }
 
@@ -42,7 +42,7 @@ public class PornOTAPreferenceController extends PreferenceController {
         return true;
     }
 
-    public boolean isPornOTA() {
+    public boolean isXenonOTA() {
         PackageManager pm = mContext.getPackageManager();
         try {
             pm.getApplicationInfo("com.xenonota", 0);
@@ -55,7 +55,7 @@ public class PornOTAPreferenceController extends PreferenceController {
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        if (!isPornOTA()) {
+        if (!isXenonOTA()) {
             removePreference(screen, KEY_XENONOTA);
         }
     }

@@ -35,7 +35,7 @@ import com.android.settings.notification.SoundSettings;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
-import com.paosp.settings.PornSettings;
+import com.xenonhd.settings.XenonSettings;
 
 import java.util.Map;
 
@@ -88,7 +88,7 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
         PARENT_TO_CATEGORY_KEY_MAP.put(ConfigureNotificationSettings.class.getName(),
                 CategoryKey.CATEGORY_NOTIFICATIONS);
-        PARENT_TO_CATEGORY_KEY_MAP.put(PornSettings.class.getName(),
+        PARENT_TO_CATEGORY_KEY_MAP.put(XenonSettings.class.getName(),
                 CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());

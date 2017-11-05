@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 PornAOSP
+ * Copyright (C) 2017 XenonHD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.paosp;
+package com.android.settings.xenonhd;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -67,7 +67,7 @@ public class Changelog extends SettingsPreferenceFragment {
             }
             text = data.toString();
         } catch (IOException e) {
-            text = getString(R.string.changelog_paosp_error);
+            text = getString(R.string.changelog_xenonhd_error);
         } finally {
             try {
                 if (inputReader != null) {
@@ -110,6 +110,6 @@ public class Changelog extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.PAOSP;
+        return MetricsProto.MetricsEvent.XENONHD;
     }
 }

@@ -17,9 +17,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <Preference android:key="paosp_logo"
+        <Preference android:key="xenonhd_logo"
                           android:enabled="false"
-                          android:layout="@layout/paosp_logo_row" />
+                          android:layout="@layout/xenonhd_logo_row" />
 
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
@@ -65,13 +65,13 @@
                         android:data="https://source.android.com/security/bulletin/" />
         </Preference>
 
-        <!-- PornAOSP Version -->
-        <Preference android:key="paosp_version"
-                android:title="@string/paosp_version" />
+        <!-- XenonHD Version -->
+        <Preference android:key="xenonhd_version"
+                android:title="@string/xenonhd_version" />
 
-        <!-- PornAOSP Maintainer -->
-        <Preference android:key="paosp_maintainer"
-                android:title="@string/paosp_maintainer" />
+        <!-- XenonHD Maintainer -->
+        <Preference android:key="xenonhd_maintainer"
+                android:title="@string/xenonhd_maintainer" />
 
         <!-- Device FCC equipment id -->
         <Preference
